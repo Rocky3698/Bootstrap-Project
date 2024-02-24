@@ -64,6 +64,11 @@ body{
 
 .catagory{
     background-color: #ededed;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
 }
 
 
