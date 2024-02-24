@@ -1,0 +1,157 @@
+nav {
+    background-color: rgb(26, 24, 122);
+}
+body{
+    margin: 0px;
+    padding:0px;
+}
+.logo {
+    height: 40px;
+    margin-left: 10%;
+}
+
+.background {
+    background-image: url(img/g1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.catagory-bg{
+    background-color: #fafafa;
+
+}
+.banner-container {
+    height: 50vh;
+}
+
+.font-opacity {
+    opacity: 0.5;
+}
+
+.text {
+    font-size: 1em;
+}
+
+.div-1 {
+    background-color: #ffffff;
+    height: 45%;
+}
+
+.div-2 {
+    background-color: #adc2d7;
+    position: relative;
+    height: 55%;
+    overflow: hidden;
+}
+
+.div-2-img {
+    width: 60%;
+    /* transform: rotate(-10deg); */
+    position: absolute;
+    top: -40%;
+    left: -10%;
+}
+
+.div-3 {
+    background-color: #ededed;
+    overflow-x: hidden;
+}
+
+.headline {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.catagory{
+    background-color: #ededed;
+}
+
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    .banner-container{
+        height: 70vh;
+    }
+}
+@media (min-width: 768px) {
+    .search-box {
+        width: 50%;
+    }
+
+    .heading {
+        font-size: 5em;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    /* .banner-container {
+        height: 70vh;
+    } */
+
+    .headline {
+        font-size: 3em;
+    }
+
+    .text {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .fluid-control {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .div-1{
+        height: 50%;
+    }
+    .div-2{
+        height: 50%;
+    }
+    
+}
+@media(max-width:425px){
+    .banner-container {
+        height: 70vh;
+    }
+}
+@media (min-width: 1440px) {
+    .logo {
+        height: 50px;
+        margin-left: 160px;
+    }
+}
+@media (max-width: 1440px) {
+    .headline {
+        font-size: 2em;
+    }
+
+    .div-2-img {
+        width: 60%;
+        /* transform: rotate(-10deg); */
+
+        top: 5%;
+        left: -10%;
+    }
+}
+@media (max-width: 767px) {
+    .div-2{
+        height: 20em;
+    }
+    .div-2-img{
+        bottom: -25%;
+        left: -30%;
+    }
+    .div-1{
+        height: 25em;
+        position: relative;
+        margin: 0px;
+    }
+    .div-1-img{
+        
+        width: 75%;
+        position: absolute;
+        bottom: 15%;
+        left: -15%;
+    }
+}
