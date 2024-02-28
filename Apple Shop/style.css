@@ -1,10 +1,7 @@
 nav {
     background-color: rgb(26, 24, 122);
 }
-body{
-    margin: 0px;
-    padding:0px;
-}
+
 .logo {
     height: 40px;
     margin-left: 10%;
@@ -15,21 +12,20 @@ body{
     background-size: cover;
     background-position: center;
 }
-.catagory-bg{
-    background-color: #fafafa;
 
-}
 .banner-container {
     height: 50vh;
-}
-
-.font-opacity {
-    opacity: 0.5;
 }
 
 .text {
     font-size: 1em;
 }
+.headline {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: lighter;
+    font-size: 2em;
+}
+
 
 .div-1 {
     background-color: #ffffff;
@@ -56,27 +52,97 @@ body{
     overflow-x: hidden;
 }
 
-.headline {
-    font-family: "Courier New", Courier, monospace;
-    font-weight: lighter;
-    font-size: 2em;
+
+#browse
+{
+    background-color: #FAFAFA;
+    padding: 5vw;
+}
+#browse-heading
+{
+    font-size: 2.25vw;
+    margin-bottom: 2vw;
+}
+#browse-cats {row-gap: 2vw;}
+.category
+{
+    width: 12vw;
+    height: 12vw;
+    background-color: #EDEDED;
+    border-radius: 2vw;
+}
+.category i {font-size: 2.5vw;}
+.category p {font-size: 1.5vw;}
+
+#browse-arrows i:hover
+{
+    text-shadow: blue 0 0 .5vw;
+    cursor: pointer;
+}
+.category:hover
+{
+    background-color: #0088ff;
+    color: white;
 }
 
-.catagory{
-    background-color: #ededed;
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-    text-align: center;
-    padding-top: 50px;
+#buy-products {padding: 5vw;}
+#buy-products li a
+{
+    font-size: 1.5vw;
+    margin-right: 1.25vw;
+    margin-bottom: 2.5vw;
+}
+.card.product-card
+{
+    background-color: #F6F6F6;
+    border-color: transparent;
+    padding: 2vw;
 }
 
+.product-info {font-size: 1.5vw;}
+.product-price {font-size: 2vw;}
+.buy-btn-txt {font-size: 1.75vw;}
+.buy-btn
+{
+    width: 14vw;
+    height: 4vw;
+}
+
+.favorite {display: none;}
+.favorite:checked + label i,
+    .favorite:hover + label i {color: red;}
+.favorite + label i
+{
+    text-shadow: black 0px 0px .3vw;
+    font-size: 2vw;
+}
+
+
+.last-banner {
+    background-color: #958ad4;
+}
+
+.ipad {
+    width: 30vw;
+    right: -15vw;
+}
+
+.ipad-1 {
+    width: 25vw;
+    left: -10vw;
+}
+
+footer {
+    background-color: #0e071b;
+}
 
 @media (min-width: 768px) and (max-width: 1440px) {
-    .banner-container{
-        height: 70vh;
+    .banner-container {
+        height: 50vh;
     }
+
 }
+
 @media (min-width: 768px) {
     .search-box {
         width: 50%;
@@ -86,10 +152,6 @@ body{
         font-size: 5em;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
-
-    /* .banner-container {
-        height: 70vh;
-    } */
 
     .headline {
         font-size: 3em;
@@ -101,7 +163,19 @@ body{
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+
+    .ipad {
+        width: 50vw;
+        bottom: -12vw;
+        margin-left: 30vw;
+    }
+
+    .ipad-1 {
+        top: -18vw;
+        width: 40vw;
+        margin-inline: auto;
+    }
     .fluid-control {
         display: block;
         width: 100%;
@@ -113,24 +187,46 @@ body{
     .div-2{
         height: 50%;
     }
-    
+    .category
+    {
+        width: 43vw;
+        height: 43vw;
+    }
+    .category i {font-size: 8vw;}
+    .category p {font-size: 5vw;}
+    #browse-heading {font-size: 7vw;}
+
+    #buy-products ul {width: 90vw;}
+    #buy-products li a {font-size: 4vw;}
+    .product-info {font-size: 3vw;}
+    .product-price {font-size: 4vw;}
+    .buy-btn-txt {font-size: 3vw;}
+    .buy-btn
+    {
+        width: 25vw;
+        height: 7.5vw;
+    }
+
 }
-@media(max-width:425px){
+
+@media(max-width:425px) {
     .banner-container {
-        height: 70vh;
+        height: 40vh;
     }
 }
+
 @media (min-width: 1440px) {
     .logo {
         height: 50px;
         margin-left: 160px;
     }
+    
 }
+
 @media (max-width: 1440px) {
     .headline {
         font-size: 2em;
     }
-
     .div-2-img {
         width: 60%;
         /* transform: rotate(-10deg); */
@@ -138,7 +234,9 @@ body{
         top: 5%;
         left: -10%;
     }
+
 }
+
 @media (max-width: 767px) {
     .div-2{
         height: 20em;
